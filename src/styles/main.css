@@ -176,5 +176,7 @@ a:hover {
     .hero-photo-wrap {
         width: min(34vw, 170px);
         opacity: 0.6;
+        bottom: auto;
+        top: 10%;
     }
 }
