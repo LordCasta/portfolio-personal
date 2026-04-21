@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+
+    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold text-white">Juan Pablo</a>
+            <div class="hidden md:flex gap-6 text-sm text-gray-300">
+                <a href="#about" class="hover:text-white">Sobre mí</a>
+                <a href="#skills" class="hover:text-white">Tecnologías</a>
+                <a href="#projects" class="hover:text-white">Proyectos</a>
+                <a href="#experience" class="hover:text-white">Experiencia</a>
+                <a href="#contact" class="hover:text-white">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center relative">
+            <div class="hero-bg" id="heroBg"></div>
+
+            <div class="hero-photo-wrap" aria-hidden="true">
+                <img
+                    id="heroPhoto"
+                    src="../img/foto-profesional.png"
+                    alt="Foto profesional de Juan Pablo"
+                    class="hero-photo"
+                    loading="eager"
+                >
+            </div>
+            
+            <div class="hero-content max-w-6xl mx-auto px-6 py-24 w-full">
+                <p class="text-sm uppercase tracking-[0.3em] text-cyan-400 mb-4">Portafolio personal</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight max-w-4xl">
+                    Hola, soy <span class="text-cyan-400">Juan Pablo Castaño</span>.
+                </h1>
+                <p class="mt-6 max-w-2xl text-lg text-gray-300">
+                    Desarrollador Full-Stack Junior enfocado en la creación de aplicaciones web con PHP, Laravel y JavaScript. 
+                    Tengo experiencia construyendo sistemas completos, desde el backend hasta el frontend, incluyendo bases de datos y pruebas.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-cyan-500 text-gray-950 font-semibold hover:bg-cyan-400">Ver proyectos</a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl border border-gray-700 hover:border-cyan-500">Contacto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-6">Sobre mí</h2>
+                <p class="max-w-3xl text-gray-300">
+                    Soy desarrollador Full-Stack Junior con experiencia en el desarrollo de aplicaciones web utilizando PHP, Laravel, JavaScript y MySQL. 
+                    He trabajado en la construcción de sistemas completos, incluyendo lógica de negocio, interfaces de usuario y bases de datos.
+
+                    También cuento con conocimientos en automatización de pruebas utilizando Java, Serenity BDD y Cucumber, aplicando buenas prácticas 
+                    para asegurar la calidad del software.
+
+                    Actualmente me enfoco en seguir fortaleciendo mis habilidades en desarrollo web, creando proyectos que sean escalables, mantenibles 
+                    y orientados a resolver problemas reales.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10">Tecnologías</h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 rounded-2xl bg-gray-900 border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-6 text-cyan-400">Frontend</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" class="w-6 h-6">
+                                <span>HTML</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-6 h-6">
+                                <span>CSS</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="w-6 h-6">
+                                <span>JavaScript</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React JS" class="w-6 h-6">
+                                <span>React JS</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" class="w-6 h-6">
+                                <span>Tailwind CSS</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gray-900 border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-6 text-cyan-400">Backend</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" class="w-6 h-6">
+                                <span>PHP</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-6 h-6">
+                                <span>Laravel</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" class="w-6 h-6">
+                                <span>MySQL</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="w-6 h-6">
+                                <span>SQL Server</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="Mongo DB" class="w-6 h-6">
+                                <span>Mongo DB</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gray-900 border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-6 text-cyan-400">Pruebas</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-6 h-6">
+                                <span>Java</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/selenium/43B02A" alt="Selenium" class="w-6 h-6">
+                                <span>Selenium</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <img src="https://cdn.simpleicons.org/cucumber/23D96C" alt="Cucumber" class="w-6 h-6">
+                                <span>Cucumber</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10">Proyectos</h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <article class="group p-6 rounded-2xl bg-gray-900 border border-gray-800 hover:border-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+    
+                        <h3 class="text-xl font-semibold mb-3 group-hover:text-cyan-400 transition">
+                            Sistema de Tickets para Mesa de Ayuda
+                        </h3>
+
+                        <p class="text-gray-300 mb-4">
+                            Aplicación web para la gestión de tickets de soporte desarrollada con PHP, MySQL, JavaScript y Bootstrap. 
+                            Permite registrar, administrar y dar seguimiento a incidencias, optimizando la organización y atención de solicitudes.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">PHP</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">MySQL</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">JavaScript</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Bootstrap</span>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <a href="https://github.com/LordCasta/HelpDesk-PHP" target="_blank" 
+                            class="text-cyan-400 font-medium hover:underline">
+                                Ver código →
+                            </a>
+
+                            <span class="text-xs text-gray-500">
+                                Proyecto real
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="group p-6 rounded-2xl bg-gray-900 border border-gray-800 hover:border-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+    
+                        <h3 class="text-xl font-semibold mb-3 group-hover:text-cyan-400 transition">
+                            Sistema de Gestión de Clínicas
+                        </h3>
+
+                        <p class="text-gray-300 mb-4">
+                            Aplicación de escritorio desarrollada en C# con Windows Forms para la gestión de clínicas. 
+                            Permite administrar pacientes, doctores, citas y pagos, integrando conexión a base de datos y 
+                            uso de procedimientos almacenados.
+
+                            Implementé patrones de diseño como Repository, Singleton, Factory y Unit of Work, mejorando 
+                            la organización, escalabilidad y mantenibilidad del sistema.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">C#</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">.NET</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">WinForms</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">SQL Server</span>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <a href="https://github.com/LordCasta/AppGestionClinica" target="_blank" 
+                            class="text-cyan-400 font-medium hover:underline">
+                                Ver código →
+                            </a>
+
+                            <span class="text-xs text-gray-500">
+                                Proyecto académico avanzado
+                            </span>
+                        </div>
+
+                    </article>
+
+                    <article class="group p-6 rounded-2xl bg-gray-900 border border-gray-800 hover:border-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+    
+                        <h3 class="text-xl font-semibold mb-3 group-hover:text-cyan-400 transition">
+                            Automatización de Pruebas Web (Screenplay)
+                        </h3>
+
+                        <p class="text-gray-300 mb-4">
+                            Automatización de pruebas funcionales para aplicaciones web utilizando Java, Selenium, Cucumber y Serenity BDD, 
+                            implementando el patrón Screenplay.
+
+                            Desarrollé escenarios bajo enfoque BDD para validar flujos críticos como búsqueda de productos, navegación y 
+                            procesos de compra, asegurando la calidad del sistema mediante pruebas automatizadas y estructuradas.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Java</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Selenium</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Cucumber</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Serenity BDD</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded-md">Screenplay</span>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <a href="https://github.com/LordCasta/KtronixScreenplay" target="_blank" 
+                            class="text-cyan-400 font-medium hover:underline">
+                                Ver código →
+                            </a>
+
+                            <span class="text-xs text-gray-500">
+                                QA Automation
+                            </span>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-10">Experiencia laboral</h2>
+
+                <div class="space-y-6">
+                    <article class="p-6 rounded-2xl bg-gray-900 border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-2">Desarrollador Web / QA</h3>
+                        <p class="text-gray-400 text-sm mb-4">Freelancer | Abril 2024 - Septiembre 2024</p>
+                        <p class="text-gray-300">
+                            Desarrollé y mantuve un CRM web personalizado utilizando PHP, MySQL y arquitectura MVC. 
+                            Implementé módulos de gestión de clientes y reportes, mejorando la eficiencia operativa.
+
+                            También trabajé en mantenimiento y personalización de sitios en WordPress, además de realizar pruebas funcionales 
+                            y validaciones para asegurar la calidad del software.
+                        </p>
+                    </article>
+
+                    <article class="p-6 rounded-2xl bg-gray-900 border border-gray-800">
+                        <h3 class="text-xl font-semibold mb-2">Desarrollador Web</h3>
+                        <p class="text-gray-400 text-sm mb-4">Racket Center | Abril 2025 - Marzo 2026</p>
+                        <p class="text-gray-300">
+                            Responsable del desarrollo full-stack de aplicaciones web, trabajando en frontend, backend y bases de datos. 
+                            Utilicé PHP, Laravel y WordPress para implementar nuevas funcionalidades y mejorar sistemas existentes.
+
+                            Desarrollé interfaces administrativas, optimicé procesos internos y realicé pruebas funcionales e integración 
+                            antes de cada despliegue.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+                <p class="max-w-2xl text-gray-300">
+                    Puedes contactarme a través de mi correo o ver más de mi trabajo en GitHub y LinkedIn.
+
+                    <br><br>
+                    <a href="mailto:castanocastanojuan06@gmail.com" class="text-blue-400 hover:text-blue-300">📧 castanocastanojuan06@gmail.com </a> 
+                    <br>
+                    💻 GitHub: <a href="https://github.com/LordCasta" class="text-blue-400 hover:text-blue-300" target="_blank">https://github.com/LordCasta</a>
+                    <br>
+                    🔗 LinkedIn: <a href="https://www.linkedin.com/in/juan-pablo-casta%C3%B1o-3354892a4/" class="text-blue-400 hover:text-blue-300" target="_blank">https://www.linkedin.com/in/juan-pablo-casta%C3%B1o-3354892a4/</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 border-t border-gray-800 text-gray-400">
+        <p>&copy; 2026 Juan Pablo Castaño. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

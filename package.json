@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-personal",
+  "version": "1.0.0",
+  "description": "A personal portfolio to showcase my experience and projects as a software developer.",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "echo 'Building the project...'",
+    "start": "echo 'Starting the project...'",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "developer",
+    "software"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  }
+}
